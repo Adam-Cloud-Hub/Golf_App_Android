@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Golf_App.Views" 
+       xmlns:golf_app="clr-namespace:Golf_App" 
+       x:DataType="golf_app:AppShell"
+       Title="Golf_App"
+       x:Class="Golf_App.AppShell">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="White" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="Blue" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#132132" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="White"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="DarkOrange"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    
+    
+    <TabBar>
+        <ShellContent Title="Game History" Icon="Logo.png" ContentTemplate="{DataTemplate local:GameHistory}" Route="GameHistory"/>
+        <ShellContent Title="Home" Icon="logo.png" ContentTemplate="{DataTemplate local:Home}" Route="Home"/>
+        <ShellContent Title="Select Game" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:SelectGame}" Route="SelectGame"/>
+        <ShellContent Title="Game" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:SelectGame}" Route="SelectGame"/>
+
+
+    </TabBar>   
+
+
+
+</Shell>
