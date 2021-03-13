@@ -7,10 +7,14 @@
 
   <ItemGroup>
     <None Remove="Resources\Courses.xml" />
+    <None Remove="Resources\Courses\Gainsborough Karsten Lakes\Hole1.jpg" />
+    <None Remove="Resources\Hole1.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\Courses.xml" />
+    <EmbeddedResource Include="Resources\Courses\Gainsborough Karsten Lakes\Hole1.jpg" />
+    <EmbeddedResource Include="Resources\Hole1.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,16 +26,15 @@
     <EmbeddedResource Update="Views\GameHistory.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\GameInProgress.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Home.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SelectGame.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Classes\" />
   </ItemGroup>
 
   <ItemGroup>

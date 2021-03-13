@@ -88,14 +88,11 @@ namespace Golf_App.Classes
 
         public static void ImportGame()
         {
-
-
-
             try
             {
-                if (File.Exists("Courses.xml"))
+                if (File.Exists(EnviromentManager.SaveCurrentGame))
                 {
-                    Stream xmlInputStream = File.OpenRead("Courses.xml");
+                    Stream xmlInputStream = File.OpenRead(EnviromentManager.SaveCurrentGame);
                     XmlSerializer deserializer = new XmlSerializer(typeof(Course));
                     CurrentGame = (Course)deserializer.Deserialize(xmlInputStream);
                     xmlInputStream.Close();

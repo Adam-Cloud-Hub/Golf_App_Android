@@ -11,6 +11,10 @@ namespace Golf_App
             InitializeComponent();
 
             Startup();
+
+            CurrentItem.CurrentItem = CurrentItem.Items[1];
+
+            //CurrentItem = new Views.Home();
         }
 
         private void Startup()
@@ -25,8 +29,6 @@ namespace Golf_App
 
             //Mainwin_LoadSetup();
         }
-
-
 
     }
 }

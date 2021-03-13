@@ -5,24 +5,29 @@
              BackgroundColor="#132132"
              Shell.NavBarIsVisible="False">
 
-
     <ContentPage.Content>
-        <ListView x:Name="lv_courses" ItemTapped="lv_Courses_SelectionChanged" SelectionMode="Single" Background="#323045">
 
+        <Grid>                     
             
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Path=CourseName}" TextColor="White"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+            <ListView x:Name="lv_courses" ItemSelected="lv_courses_ItemSelected" SelectionMode="Single">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Path=CourseName}" TextColor="White"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,50">
+                <Button Text="Play Game" Clicked="bt_load_game_Click" Style="{StaticResource TestButton2}"/>
+            </StackLayout>
 
 
-
-
-        </ListView>
+        </Grid>
         
-        
-
     </ContentPage.Content>
+
+
+
+        
 
 </ContentPage>

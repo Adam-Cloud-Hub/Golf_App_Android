@@ -1,4 +1,5 @@
 ﻿using Android.Content.Res;
+using System;
 using Xamarin.Forms;
 
 namespace Golf_App
@@ -25,8 +26,5 @@ namespace Golf_App
         protected override void OnResume()
         {
         }
-
-
-
     }
 }

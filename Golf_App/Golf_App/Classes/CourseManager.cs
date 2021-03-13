@@ -9,24 +9,7 @@ namespace Golf_App.Classes
         public static Courses Courses = new Courses();
         public static Course SelectedCourse;
 
-        public static void LoadSelectedCourse()
-        {
-            foreach (var course in Courses.Course)
-            {
-                if (course.IsEnabled == true)
-                {
-                    SelectedCourse = course;
-                }
-            }
-        }
 
-        public static void SwitchSelectionAll(bool active)
-        {
-            foreach (Course acc in Courses.Course)
-            {
-                acc.IsEnabled = active;
-            }
-        }
 
         public static void ImportCourses()
         {
@@ -36,7 +19,6 @@ namespace Golf_App.Classes
             Courses = (Courses)deserializer1.Deserialize(xmlInputStream);
             xmlInputStream.Close();
 
-
             //CourseImage();
         }
 
@@ -44,18 +26,24 @@ namespace Golf_App.Classes
         {
             foreach (var course in Courses.Course)
             {
-                string holeimage = EnviromentManager.CousredataPath + course.CourseName + "/" + course.CourseImage;
+                //var assembly = typeof(App).Assembly;
+                //Stream Stream = assembly.GetManifestResourceStream("Golf_App.Resources.Courses." + course.CourseName + "." + course.CourseImage);
+                //string holeimage = Stream.ToString();
 
-                if (File.Exists(holeimage))
-                {
-                    course.CourseImage = holeimage;
-                }
+                //string holeimage = EnviromentManager.CousredataPath + course.CourseName + "/" + course.CourseImage;
+
+                course.CourseImage = "Golf_App.Resources.Courses." + course.CourseName + "." + course.CourseImage;
+
+                //if (File.Exists(holeimage))
+                //{
+                //    course.CourseImage = holeimage;
+                //}
             }
         }
 
         public static void LaunchGame()
         {
-            LoadSelectedCourse();
+            //LoadSelectedCourse();
             GameManager.NewGame();
             GameManager.SaveCurrentGame();
         }

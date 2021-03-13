@@ -38,11 +38,13 @@ namespace Golf_App.Classes
         public static void FindGameHistory()
         {
             GameFiles.Clear();
-            string[] files = Directory.GetFiles(EnviromentManager.SavedGamesPath);
+            
+            var files = Directory.GetFiles(EnviromentManager.SavedGamesPath);
             foreach (string file in files)
             {
                 GameFiles.Add(Path.GetFileName(file));
-            }
+            }         
+
         }
 
         public static void GetGameHistory()

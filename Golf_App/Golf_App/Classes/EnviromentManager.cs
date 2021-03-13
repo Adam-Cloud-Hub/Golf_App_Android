@@ -6,8 +6,8 @@ namespace Golf_App.Classes
 {
     public static class EnviromentManager
     {
-        public static string CurrentGamePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Golf App\Saved Games\Temp\";
-        public static string SavedGamesPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Golf App\Saved Games\";
+        public static string CurrentGamePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"/Golf App/Saved Games/Temp/";
+        public static string SavedGamesPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"/Golf App/Saved Games/";
 
 
         //public static string CurrentGamePath = Directory.GetCurrentDirectory() + @"..\..\..\Saved Games\Temp\";
@@ -29,7 +29,7 @@ namespace Golf_App.Classes
 
         public static void DirectorySetup()
         {
-
+            //if (!Directory.Exists(SavedGamesPath)) DependencyService.Get<IDirectory>().CreateDirectory(SavedGamesPath);
             if (!Directory.Exists(CurrentGamePath)) DependencyService.Get<IDirectory>().CreateDirectory(CurrentGamePath);
 
 
