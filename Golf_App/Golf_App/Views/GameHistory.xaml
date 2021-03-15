@@ -1,50 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Golf_App.Views.GameHistory"
              BackgroundColor="#132132"
              Shell.NavBarIsVisible="False">
 
     <ContentPage.Content>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="20"/>
-            </Grid.RowDefinitions>
             
             <ListView Grid.Row="0" x:Name="lv_View_Game_History" ItemSelected="lv_View_Game_History_ItemSelected" SelectionMode="Single" HasUnevenRows="True" HeightRequest="-1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-                                <StackLayout Orientation="Horizontal" HeightRequest="50">
-                                    <Label Text="{Binding Path=CourseName}" TextColor="White" HorizontalOptions="Start" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
-                                    <Label Text="{Binding Path=GameTime}" TextColor="White" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" Margin="0,0,0,0"/>
-                                    <Label Text="{Binding Path=GameDate}" TextColor="White" HorizontalOptions="End" VerticalTextAlignment="Center" Margin="0,0,5,0"/>
-                                </StackLayout>
+                            <StackLayout Orientation="Horizontal" HeightRequest="50">
+                                <Label Text="{Binding Path=CourseName}" TextColor="White" HorizontalOptions="Start" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                                <Label Text="{Binding Path=GameTime}" TextColor="White" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" Margin="0,0,0,0"/>
+                                <Label Text="{Binding Path=GameDate}" TextColor="White" HorizontalOptions="End" VerticalTextAlignment="Center" Margin="0,0,5,0"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ListView Grid.Row="1" x:Name="lv_Game_History" ItemSelected="lv_Game_History_ItemSelected" SelectionMode="Single" HasUnevenRows="True" HeightRequest="-1">
+            
+            <ListView Grid.Row="1" x:Name="lv_Game_History" ItemSelected="lv_Game_History_ItemSelected" SelectionMode="Single">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-                                <StackLayout Orientation="Horizontal" HeightRequest="40">
-                                    <Label Text="{Binding Path=HoleNumber}" TextColor="White" Margin="10,0,0,0"/>
-                                </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Path=HoleNumber}" VerticalTextAlignment="Center"  TextColor="White" Margin="10,0,0,0"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Grid x:Name="grid_History" Grid.Row="2" VerticalOptions="End">
+
+
+
+
+
+
+
+            <Grid x:Name="grid_History" Grid.Row="2" VerticalOptions="EndAndExpand">
                 
                 <Label Text="Hole: " TextColor="White" Margin="5,0,0,0"/>
                 <Label x:Name="tb_History_HoleNumber" Text="holenumber" TextColor="White" Margin="100,0,0,0"/>
@@ -61,7 +59,7 @@
             </Grid>
 
             <StackLayout Grid.Row="2" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,5,5">
-                <Button x:Name="bt_Delete_Game_File" Text="Delete Saved Game" Clicked="bt_Delete_Game_File_Clicked" Style="{StaticResource TestButton2}"/>
+                <Button x:Name="bt_Delete_Game_File" Text="Delete Saved Game" Clicked="bt_Delete_Game_File_Clicked" Style="{StaticResource WhiteButtonStyle}"/>
             </StackLayout>
             
         </Grid>

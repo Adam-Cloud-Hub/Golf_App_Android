@@ -26,7 +26,7 @@ namespace Golf_App.Views
 
         protected override void OnAppearing()
         {
-            if (GameManager.CurrentGame.CourseName == null)
+            if (GameManager.CurrentGame.IsEnabled == false)
             {
                 NoSelectedCourse();
             }
@@ -124,6 +124,8 @@ namespace Golf_App.Views
         private void bt_FinishGame_Clicked(object sender, EventArgs e)
         {
             GameManager.SaveGame();
+            GameManager.ClearCurrentGame();
+
             Shell.Current.CurrentItem = Shell.Current.CurrentItem.Items[1];
         }
 

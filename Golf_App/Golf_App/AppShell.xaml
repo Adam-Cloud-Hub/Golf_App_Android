@@ -25,23 +25,15 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    
-
-
     <!--
-        The overall app visual hierarchy is defined here, along with navigation.
-    
+        The overall app visual hierarchy is defined here, along with navigation.    
         https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
     -->
 
-        
-    <TabBar>        
+    <TabBar>
         <ShellContent Title="Game History" Icon="icon_about.png" ContentTemplate="{DataTemplate local:GameHistory}" Route="GameHistory"/>
         <ShellContent Title="Home" Icon="icon_about.png" ContentTemplate="{DataTemplate local:Home}" Route="Home"/>
         <ShellContent Title="Select Game" Icon="icon_about.png" ContentTemplate="{DataTemplate local:SelectGame}" Route="SelectGame"/>
         <ShellContent Title="Game" Icon="icon_about.png" ContentTemplate="{DataTemplate local:GameInProgress}" Route="GameInProgress"/>
-    </TabBar>   
-
-
-
+    </TabBar>
 </Shell>

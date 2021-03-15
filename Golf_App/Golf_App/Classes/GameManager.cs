@@ -16,6 +16,18 @@ namespace Golf_App.Classes
         public static int ParNumber = 0;
         public static int ScoreNumber = 0;
 
+
+
+        public static void ClearCurrentGame()
+        {
+            CoursesManager.SwitchSelectionAll(false);
+
+            CurrentHoleNumber = 0;
+            HoleNumber = 0;
+            ParNumber = 0;
+            ScoreNumber = 0;
+        }
+
         public static void NewGame()
         {
             CurrentGame = CoursesManager.SelectedCourse;
@@ -59,6 +71,7 @@ namespace Golf_App.Classes
 
                 if (!File.Exists(EnviromentManager.SavedGamesPath + filename))
                 {
+                    CurrentGame.FileName = filename;
                     XmlSerializer writer = new XmlSerializer(CurrentGame.GetType());
                     FileStream file = File.Create(EnviromentManager.SavedGamesPath + filename);
                     writer.Serialize(file, CurrentGame);

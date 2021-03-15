@@ -34,7 +34,18 @@ namespace Golf_App.Classes
             GameManager.NewGame();
             GameManager.SaveCurrentGame();
         }
+
+        public static void SwitchSelectionAll(bool active)
+        {
+            foreach (var course in Courses.Course)
+            {
+                course.IsEnabled = active;
+            }
+        }
     }
+
+
+
 
     [XmlRoot("Courses")]
     public class Courses
@@ -50,6 +61,9 @@ namespace Golf_App.Classes
 
         [XmlElement("CourseImage")]
         public string CourseImage { get; set; }
+
+        [XmlElement("FileName")]
+        public string FileName { get; set; }
 
         [XmlElement("IsEnabled")]
         public string BackingIsEnabled

@@ -1,6 +1,7 @@
 ﻿using Golf_App.Classes;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,14 +18,21 @@ namespace Golf_App.Views
         public GameHistory()
         {
             InitializeComponent();
+
+
         }
 
         protected override void OnAppearing()
         {
             StatsManager.FindGameHistory();
-            StatsManager.GetGameHistory();
+
+            //lv_View_Game_History.ItemsSource = null;
             lv_View_Game_History.ItemsSource = StatsManager.GameHistory;
-            lv_View_Game_History.SelectedItem = ((List<Course>)lv_View_Game_History.ItemsSource).FirstOrDefault();
+
+
+
+
+            lv_View_Game_History.SelectedItem = ((ObservableCollection<Course>)lv_View_Game_History.ItemsSource).FirstOrDefault();
 
             if (StatsManager.GameHistory.Count == 0)
             {
@@ -46,15 +54,15 @@ namespace Golf_App.Views
             if (StatsManager.GameHistory.Count != 0)
             {
                 StatsManager.ViewGameHistory = (Course)(sender as ListView).SelectedItem;
-                StatsManager.SetViewGameHistory();
 
                 lv_Game_History.ItemsSource = StatsManager.ViewGameHistory.CourseHoles;
                 lv_Game_History.SelectedItem = ((Hole[])lv_Game_History.ItemsSource).FirstOrDefault();
+
+                StatsManager.GameFile = StatsManager.ViewGameHistory.FileName;
             }
             else
             {
             }
-
         }
 
         private void lv_Game_History_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -75,10 +83,19 @@ namespace Golf_App.Views
         // Removes the saved game file. 
         private void bt_Delete_Game_File_Clicked(object sender, EventArgs e)
         {
-            if (File.Exists(EnviromentManager.SavedGamesPath + StatsManager.GameFile)) File.Delete(EnviromentManager.SavedGamesPath + StatsManager.GameFile);
+            //DisplayAlert("File", "Deleting " + StatsManager.GameFile + StatsManager.ViewGameHistory.FileName + StatsManager.ViewGameHistory.GameTime, "Ok");
+
+            if (File.Exists(EnviromentManager.SavedGamesPath + StatsManager.GameFile))
+            {
+                File.Delete(EnviromentManager.SavedGamesPath + StatsManager.GameFile);
+            }
             StatsManager.ClearGameHistory();
 
-            Shell.Current.CurrentItem = Shell.Current.CurrentItem.Items[1];
+
+            lv_View_Game_History.SelectedItem = ((ObservableCollection<Course>)lv_View_Game_History.ItemsSource).FirstOrDefault();
+
+
+            //Shell.Current.CurrentItem = Shell.Current.CurrentItem.Items[1];
         }
     }
 }

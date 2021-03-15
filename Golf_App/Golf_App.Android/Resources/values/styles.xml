@@ -15,7 +15,10 @@
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
 
-
+    <!--Startup background colour-->
+    <item name="android:windowBackground">#132132</item>
+    <!--Status Bar colour-->
+    <item name="android:statusBarColor">#132132</item>
     
     <item name="android:colorActivatedHighlight">@android:color/holo_blue_dark</item>
   </style>
