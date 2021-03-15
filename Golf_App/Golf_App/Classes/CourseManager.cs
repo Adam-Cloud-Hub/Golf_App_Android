@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 
 namespace Golf_App.Classes
@@ -9,8 +10,6 @@ namespace Golf_App.Classes
         public static Courses Courses = new Courses();
         public static Course SelectedCourse;
 
-
-
         public static void ImportCourses()
         {
             var assembly = typeof(App).Assembly;
@@ -19,31 +18,19 @@ namespace Golf_App.Classes
             Courses = (Courses)deserializer1.Deserialize(xmlInputStream);
             xmlInputStream.Close();
 
-            //CourseImage();
+            CourseImage();
         }
 
         private static void CourseImage()
         {
             foreach (var course in Courses.Course)
             {
-                //var assembly = typeof(App).Assembly;
-                //Stream Stream = assembly.GetManifestResourceStream("Golf_App.Resources.Courses." + course.CourseName + "." + course.CourseImage);
-                //string holeimage = Stream.ToString();
-
-                //string holeimage = EnviromentManager.CousredataPath + course.CourseName + "/" + course.CourseImage;
-
-                course.CourseImage = "Golf_App.Resources.Courses." + course.CourseName + "." + course.CourseImage;
-
-                //if (File.Exists(holeimage))
-                //{
-                //    course.CourseImage = holeimage;
-                //}
+                course.CourseImage = Regex.Replace(course.CourseName, @"\s+", "") + "_" + course.CourseImage;
             }
         }
 
         public static void LaunchGame()
         {
-            //LoadSelectedCourse();
             GameManager.NewGame();
             GameManager.SaveCurrentGame();
         }

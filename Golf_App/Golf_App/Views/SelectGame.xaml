@@ -1,33 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"          
              x:Class="Golf_App.Views.SelectGame"
              BackgroundColor="#132132"
              Shell.NavBarIsVisible="False">
 
     <ContentPage.Content>
-
-        <Grid>                     
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
             
-            <ListView x:Name="lv_courses" ItemSelected="lv_courses_ItemSelected" SelectionMode="Single">
+            <ListView Grid.Row="0" x:Name="lv_courses" ItemSelected="lv_courses_ItemSelected" SelectionMode="Single" HasUnevenRows="True" HeightRequest="-1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Path=CourseName}" TextColor="White"/>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Path=CourseName}" TextColor="White" VerticalTextAlignment="Center" WidthRequest="300" HeightRequest="100" Margin="10,0,0,0"/>
+                                    <Image Source="{Binding Path=CourseImage}" HeightRequest="100" WidthRequest="155" Margin="0,0,2,0"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
 
-            <StackLayout HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,50">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,0">
                 <Button Text="Play Game" Clicked="bt_load_game_Click" Style="{StaticResource TestButton2}"/>
             </StackLayout>
 
 
         </Grid>
         
-    </ContentPage.Content>
-
-
-
-        
-
+    </ContentPage.Content>       
 </ContentPage>

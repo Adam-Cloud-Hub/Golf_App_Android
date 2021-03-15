@@ -99,13 +99,27 @@
     <AndroidResource Include="Resources\drawable\Umbrella_Golf.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Courses.xml" />
+    <AndroidResource Include="Resources\drawable\GrangeParkMessinghamGolfClub_FrontImage.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Courses.xml" />
+    <AndroidResource Include="Resources\drawable\GainsboroughKarstenLakes_FrontImage.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Hole1.png" />
+    <AndroidResource Include="Resources\drawable\GainsboroughThonockPark_FrontImage.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NormanbyHallGolfClub_FrontImage.jpg">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

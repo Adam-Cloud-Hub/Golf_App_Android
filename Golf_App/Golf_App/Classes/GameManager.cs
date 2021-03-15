@@ -9,9 +9,7 @@ namespace Golf_App.Classes
     public static class GameManager
     {
         public static Course CurrentGame = new Course();
-
         public static List<Hole> UserScoreValues = new List<Hole>();
-
 
         public static int CurrentHoleNumber = 0;
         public static int HoleNumber = 0;
@@ -74,14 +72,11 @@ namespace Golf_App.Classes
                 }
             }
             File.Delete(EnviromentManager.SaveCurrentGame);     // Removes past game 
-
-
         }
 
         // Picks up were user left off or loads in past game.
         public static void LoadPastGame()
         {
-            //CoursesManager.SwitchSelectionAll(false);   // Clears selected course.
             ImportGame();
             CoursesManager.SelectedCourse = CurrentGame;
         }
@@ -99,7 +94,7 @@ namespace Golf_App.Classes
                 }
             }
             catch (Exception)
-            {
+            {              
                 //MessageBox.Show("Could not load Course data.\n" + e.Message);
             }
         }
@@ -117,17 +112,12 @@ namespace Golf_App.Classes
                         CurrentGame.CourseHoles[i].HoleParScore = "Ace";
                         break;
                     }
-                    else if (ScoreNumber == 0)
-                    {
-                        CurrentGame.CourseHoles[i].HoleParScore = "Void";
-                        break;
-                    }
                     else if (FindPar >= 4)
                     {
                         CurrentGame.CourseHoles[i].HoleParScore = "Max";
                         break;
                     }
-                    else if (FindPar <= -4)
+                    else if (FindPar <= -4 || ScoreNumber == 0)
                     {
                         CurrentGame.CourseHoles[i].HoleParScore = "Void";
                         break;

@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,11 +15,7 @@ namespace Golf_App.Views
     {
         public GameInProgress()
         {
-
-
-
             InitializeComponent();
-
         }
 
         private async void NoSelectedCourse()
@@ -30,26 +26,20 @@ namespace Golf_App.Views
 
         protected override void OnAppearing()
         {
-            //Write the code of your page here
-
             if (GameManager.CurrentGame.CourseName == null)
             {
                 NoSelectedCourse();
             }
 
             loadCourseData();
-
             base.OnAppearing();
         }
-
 
         private void loadCourseData()
         {
             Title_Game_in_Progress.Text = GameManager.CurrentGame.CourseName;
-
             cb_ScrollHoleNumber.ItemsSource = GameManager.CurrentGame.CourseHoles;
             cb_ScrollScore.ItemsSource = GameManager.UserScoreValues;
-
             cb_ScrollHoleNumber.SelectedIndex = 0;
         }
 
@@ -74,30 +64,20 @@ namespace Golf_App.Views
                     bt_NextHole.IsVisible = true;
                 }
 
-                string holeimage = "Hole1" + ".png";
-                image_coursehole.Source = holeimage;
-
+                string holeimage = "Golf_App.Resources.Courses." + Regex.Replace(GameManager.CurrentGame.CourseName, @"\s+", "")  + ".Hole" + hole.HoleNumber + ".JPG";
+                image_coursehole.Source = ImageSource.FromResource(holeimage);
 
                 GameManager.ParNumber = hole.HolePar;
                 GameManager.HoleNumber = hole.HoleNumber;
-
-                GameManager.CurrentHoleNumber = cb_ScrollHoleNumber.SelectedIndex;       
-                
-                cb_ScrollScore.SelectedIndex = hole.HoleScore;
-                
-
+                GameManager.CurrentHoleNumber = cb_ScrollHoleNumber.SelectedIndex;                  
+                cb_ScrollScore.SelectedIndex = hole.HoleScore;               
                 tb_Hole_Distance.Text = hole.HoleDistance.ToString() + " Yards";
                 tb_ParValue.Text = hole.HolePar.ToString();
-
-
                 bt_ScrollHoleNumber.Text = (GameManager.CurrentHoleNumber + 1).ToString();
             }
             else
             {
-
             }
-
-
         }
 
         private void cb_ScrollScore_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,7 +124,6 @@ namespace Golf_App.Views
         private void bt_FinishGame_Clicked(object sender, EventArgs e)
         {
             GameManager.SaveGame();
-
             Shell.Current.CurrentItem = Shell.Current.CurrentItem.Items[1];
         }
 

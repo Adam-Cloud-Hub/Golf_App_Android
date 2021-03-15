@@ -25,11 +25,12 @@ namespace Golf_App.Classes
 
         public static void SetViewGameHistory()
         {
+            ViewGameHistory.IsEnabled = true;
+            
             for (int i = 0; i < GameHistory.Count; i++)
             {
                 if (GameHistory[i].IsEnabled == true)
                 {
-                    ViewGameHistory = GameHistory[i];
                     GameFile = GameFiles[i];
                 }
             }

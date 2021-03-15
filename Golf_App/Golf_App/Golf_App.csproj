@@ -7,14 +7,52 @@
 
   <ItemGroup>
     <None Remove="Resources\Courses.xml" />
-    <None Remove="Resources\Courses\Gainsborough Karsten Lakes\Hole1.jpg" />
-    <None Remove="Resources\Hole1.png" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole1.jpg" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole1.jpg" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole1.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole10.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole11.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole12.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole13.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole14.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole15.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole16.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole17.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole18.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole2.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole3.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole4.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole5.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole6.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole7.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole8.JPG" />
+    <None Remove="Resources\Courses\GrangeParkMessinghamGolfClub\Hole9.JPG" />
+    <None Remove="Resources\Courses\NormanbyHallGolfClub\Hole1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\Courses.xml" />
-    <EmbeddedResource Include="Resources\Courses\Gainsborough Karsten Lakes\Hole1.jpg" />
-    <EmbeddedResource Include="Resources\Hole1.png" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole1.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole1.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole1.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole10.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole11.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole12.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole13.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole14.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole15.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole16.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole17.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole18.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole2.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole3.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole4.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole5.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole6.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole7.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole8.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GrangeParkMessinghamGolfClub\Hole9.JPG" />
+    <EmbeddedResource Include="Resources\Courses\NormanbyHallGolfClub\Hole1.JPG" />
   </ItemGroup>
 
   <ItemGroup>

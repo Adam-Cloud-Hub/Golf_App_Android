@@ -12,7 +12,6 @@ namespace Golf_App
         {
             InitializeComponent();
             MainPage = new AppShell();
-
         }
 
         protected override void OnStart()

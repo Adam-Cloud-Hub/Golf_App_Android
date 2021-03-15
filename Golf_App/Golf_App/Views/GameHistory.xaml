@@ -6,21 +6,64 @@
              Shell.NavBarIsVisible="False">
 
     <ContentPage.Content>
-
         <Grid>
-
-            <ListView x:Name="lv_View_Game_History" ItemSelected="lv_View_Game_History_ItemSelected" SelectionMode="Single">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            
+            <ListView Grid.Row="0" x:Name="lv_View_Game_History" ItemSelected="lv_View_Game_History_ItemSelected" SelectionMode="Single" HasUnevenRows="True" HeightRequest="-1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Path=CourseName}" TextColor="White"/>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                                    <Label Text="{Binding Path=CourseName}" TextColor="White" HorizontalOptions="Start" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                                    <Label Text="{Binding Path=GameTime}" TextColor="White" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" Margin="0,0,0,0"/>
+                                    <Label Text="{Binding Path=GameDate}" TextColor="White" HorizontalOptions="End" VerticalTextAlignment="Center" Margin="0,0,5,0"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
 
+            <ListView Grid.Row="1" x:Name="lv_Game_History" ItemSelected="lv_Game_History_ItemSelected" SelectionMode="Single" HasUnevenRows="True" HeightRequest="-1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" HeightRequest="40">
+                                    <Label Text="{Binding Path=HoleNumber}" TextColor="White" Margin="10,0,0,0"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
+            <Grid x:Name="grid_History" Grid.Row="2" VerticalOptions="End">
+                
+                <Label Text="Hole: " TextColor="White" Margin="5,0,0,0"/>
+                <Label x:Name="tb_History_HoleNumber" Text="holenumber" TextColor="White" Margin="100,0,0,0"/>
 
+                <Label Text="Hole Par: " TextColor="White" Margin="5,20,0,0"/>
+                <Label x:Name="tb_History_HoleParNumber" Text="holeParnumber" TextColor="White" Margin="100,20,0,0"/>
 
+                <Label Text="Current Score: " TextColor="White" Margin="5,40,0,0"/>
+                <Label x:Name="tb_History_HoleScore" Text="holescore" TextColor="White" Margin="100,40,0,0"/>
+
+                <Label Text="Score Term: " TextColor="White" Margin="5,60,0,0"/>
+                <Label x:Name="tb_History_ParScore" Text="parscore" TextColor="White" Margin="100,60,0,0"/>
+
+            </Grid>
+
+            <StackLayout Grid.Row="2" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,5,5">
+                <Button x:Name="bt_Delete_Game_File" Text="Delete Saved Game" Clicked="bt_Delete_Game_File_Clicked" Style="{StaticResource TestButton2}"/>
+            </StackLayout>
+            
         </Grid>
-
     </ContentPage.Content>
 </ContentPage>

@@ -11,7 +11,6 @@
 
             <Label x:Name="Title_Game_in_Progress" FontSize="20" TextColor="White" HorizontalOptions="Center" Margin="0,3,0,0"/>
 
-
             <Grid HorizontalOptions="Center" VerticalOptions="Start" Margin="0,0,0,0">
                 <Button x:Name="bt_NextHole" Clicked="bt_NextHole_Clicked" Text="&gt;" FontSize="16" WidthRequest="40"  Margin="100,40,0,0" Style="{StaticResource TestButton2}"/>
                 <Button x:Name="bt_PreviousHole" Clicked="bt_PreviousHole_Clicked" Text="&lt;" FontSize="16" WidthRequest="40" Margin="0,40,100,0" Style="{StaticResource TestButton2}"/>
