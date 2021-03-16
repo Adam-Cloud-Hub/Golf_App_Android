@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Golf_App.UWP", "Golf_App\Go
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Golf_App.Android", "Golf_App\Golf_App.Android\Golf_App.Android.csproj", "{9C808695-BBC6-48A4-9C3C-D11FDBDF49B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Golf_App", "Golf_App\Golf_App\Golf_App.csproj", "{936D34E8-7543-4C6D-857B-7D811CD3337E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golf_App", "Golf_App\Golf_App\Golf_App.csproj", "{936D34E8-7543-4C6D-857B-7D811CD3337E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
