@@ -12,6 +12,10 @@
             <Setter Property="Background" Value="Transparent"/>
         </Style>
 
+        
+        
+        
+        
         <Style x:Key="ScollButton" TargetType="Button">
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="BorderColor" Value="White" />

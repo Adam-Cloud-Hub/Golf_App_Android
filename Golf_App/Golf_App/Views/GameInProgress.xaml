@@ -2,50 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
              x:Class="Golf_App.Views.GameInProgress"
-             BackgroundColor="#132132"
+             BackgroundColor="Gray"
              Shell.NavBarIsVisible="False">
     
     <ContentPage.Content>
         <Grid>
-            <Image x:Name="image_coursehole" Aspect="AspectFit" Margin="250,50,0,0"/>
+            <Image x:Name="image_coursehole" Aspect="AspectFit" Margin="150,140,-10,-10"/>
 
             <Label x:Name="Title_Game_in_Progress" FontSize="20" TextColor="White" HorizontalOptions="Center" Margin="0,3,0,0"/>
 
             <Grid HorizontalOptions="Center" VerticalOptions="Start" Margin="0,0,0,0">
-                <Button x:Name="bt_NextHole" Clicked="bt_NextHole_Clicked" Text="&gt;" FontSize="16" WidthRequest="40"  Margin="100,40,0,0" Style="{StaticResource WhiteButtonStyle}"/>
-                <Button x:Name="bt_PreviousHole" Clicked="bt_PreviousHole_Clicked" Text="&lt;" FontSize="16" WidthRequest="40" Margin="0,40,100,0" Style="{StaticResource WhiteButtonStyle}"/>
+                <Button x:Name="bt_NextHole" Clicked="bt_NextHole_Clicked" Text="&gt;" FontSize="20" WidthRequest="40"  Margin="100,40,0,0" Style="{StaticResource WhiteButtonStyle}"/>
+                <Button x:Name="bt_PreviousHole" Clicked="bt_PreviousHole_Clicked" Text="&lt;" FontSize="20" WidthRequest="40" Margin="0,40,100,0" Style="{StaticResource WhiteButtonStyle}"/>
             </Grid>
 
             <Grid HorizontalOptions="Center" VerticalOptions="Start" Margin="0,40,0,0" WidthRequest="50">
-                <Button x:Name="bt_ScrollHoleNumber" Clicked="bt_ScrollHoleNumber_Clicked" WidthRequest="40" HeightRequest="50" Font="20" Style="{StaticResource ScollButton}"/>
+                <Button x:Name="bt_ScrollHoleNumber" Clicked="bt_ScrollHoleNumber_Clicked" WidthRequest="40" HeightRequest="50" Font="20" Style="{StaticResource ScrollButton}"/>
                 <Picker x:Name="cb_ScrollHoleNumber" ItemDisplayBinding="{Binding Path=HoleNumber}" SelectedIndexChanged="cb_ScrollHoleNumber_SelectedIndexChanged" IsVisible="false"/>
             </Grid>
 
-            <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="5,0,0,140">
-                <Label x:Name="tb_ParValue_Text" Text="Hole Par: " FontSize="16" TextColor="White"/>
-                <Label x:Name="tb_ParValue" Text="parvalue"  FontSize="16" TextColor="White" Margin="80,0,0,0"/>             
-            </Grid>
 
-            <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="5,0,0,110">
-                <Label Text="Hole Distance: " FontSize="16" TextColor="White"/>
-                <Label x:Name="tb_Hole_Distance" Text="Distance" FontSize="16" TextColor="White" Margin="110,0,0,0"/>
-            </Grid>
+            <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="5,0,0,370">
 
-            <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="5,0,0,75">
-                <Label Text="Current Score: " FontSize="16" TextColor="White"/>
+                <Label x:Name="tb_ParValue_Text" Text="Hole Par: " FontSize="16" TextColor="White" Margin="0,0,0,0"/>
+                <Label x:Name="tb_ParValue" Text="parvalue"  FontSize="16" TextColor="White" Margin="75,0,0,0"/>
+
+                <Label Text="Hole Distance: " FontSize="16" TextColor="White" Margin="0,25,0,0"/>
+                <Label x:Name="tb_Hole_Distance" Text="Distance" FontSize="16" TextColor="White" Margin="110,25,0,0"/>
+
+                <Label x:Name="tb_ParScore_Text" Text="Score Term: " FontSize="16" TextColor="White" Margin="0,50,0,0"/>
+                <Label x:Name="tb_ParScore" Text="parscore"  FontSize="16" TextColor="White" Margin="90,50,0,0"/>
+
+                <Label Text="Current Score: " FontSize="16" TextColor="White" Margin="0,85,0,0"/>
+
+                <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="110,75,0,0" WidthRequest="50" HeightRequest="50" >
+                    <Button x:Name="bt_ScrollScore" Clicked="bt_ScrollScore_Clicked" Font="20" Style="{StaticResource ScrollButton}"/>
+                    <Picker x:Name="cb_ScrollScore" ItemDisplayBinding="{Binding Path=HoleNumber}" SelectedIndexChanged="cb_ScrollScore_SelectedIndexChanged" IsVisible="false"/>
+                </Grid>
+
             </Grid>
+          
             
-            <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="115,0,0,60" WidthRequest="50" HeightRequest="50" >
-                <Button x:Name="bt_ScrollScore" Clicked="bt_ScrollScore_Clicked" Font="20" Style="{StaticResource ScollButton}"/>
-                <Picker x:Name="cb_ScrollScore" ItemDisplayBinding="{Binding Path=HoleNumber}" SelectedIndexChanged="cb_ScrollScore_SelectedIndexChanged" IsVisible="false"/>
-            </Grid>
-                                        
-            <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="5,0,0,40">
-                <Label x:Name="tb_ParScore_Text" Text="Score Term: " FontSize="16" TextColor="White" Margin="0,0,0,0"/>
-                <Label x:Name="tb_ParScore" Text="parscore"  FontSize="16" TextColor="White" Margin="90,0,0,0"/>
-            </Grid>
-
-            <Button x:Name="bt_FinishGame" Text="Finish Game" Clicked="bt_FinishGame_Clicked" FontSize="16" Margin="0,0,5,5" VerticalOptions="End" HorizontalOptions="End" Style="{StaticResource WhiteButtonStyle}"/>
+            
+            <Button x:Name="bt_FinishGame" Text="Finish Game" Clicked="bt_FinishGame_Clicked" FontSize="16" Margin="5,0,0,5" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource WhiteButtonStyle}"/>
         </Grid>
 
     </ContentPage.Content>
