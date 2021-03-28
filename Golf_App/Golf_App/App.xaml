@@ -16,7 +16,7 @@
         
         
         
-        <Style x:Key="ScollButton" TargetType="Button">
+        <Style x:Key="ScrollButton" TargetType="Button">
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="BorderColor" Value="White" />
             <Setter Property="BorderRadius" Value="12" />
