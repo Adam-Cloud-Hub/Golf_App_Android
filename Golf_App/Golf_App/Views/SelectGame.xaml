@@ -9,7 +9,7 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="80"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             
@@ -28,7 +28,17 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <StackLayout HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,0">
+
+
+            <Grid Grid.Row="1" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,10">
+                <Label Text="Select Handicap: " FontSize="16" TextColor="White" VerticalOptions="Center"/>                
+                <Grid HorizontalOptions="Start" VerticalOptions="Center" Margin="150,0,0,0" WidthRequest="50" HeightRequest="50">
+                    <Button x:Name="bt_ScrollHoleNumber" Clicked="bt_ScrollHoleNumber_Clicked" Font="20" Style="{StaticResource ScrollButton}"/>
+                    <Picker x:Name="cb_ScrollHoleNumber" ItemDisplayBinding="{Binding Path=HoleNumber}" SelectedIndexChanged="cb_ScrollHoleNumber_SelectedIndexChanged"  IsVisible="false"/>
+                </Grid>
+            </Grid>
+            
+            <StackLayout Grid.Row="2" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,10">
                 <Button Text="Play Game" Clicked="bt_load_game_Click" Style="{StaticResource WhiteButtonStyle}"/>
             </StackLayout>
 

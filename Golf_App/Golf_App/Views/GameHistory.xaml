@@ -6,8 +6,14 @@
              Shell.NavBarIsVisible="False">
 
     <ContentPage.Content>
-        <Grid>
-            
+        <Grid x:Name="Grid_History">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="75"/>
+            </Grid.RowDefinitions>
+
             <ListView Grid.Row="0" x:Name="lv_View_Game_History" ItemSelected="lv_View_Game_History_ItemSelected" SelectionMode="Single" HasUnevenRows="True" HeightRequest="-1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -22,44 +28,60 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            
-            <ListView Grid.Row="1" x:Name="lv_Game_History" ItemSelected="lv_Game_History_ItemSelected" SelectionMode="Single">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Path=HoleNumber}" VerticalTextAlignment="Center"  TextColor="White" Margin="10,0,0,0"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <BoxView Grid.Row="1" MinimumWidthRequest="1" BackgroundColor="WhiteSmoke"></BoxView>
 
-
-
-
-
-
-
-
-            <Grid x:Name="grid_History" Grid.Row="2" VerticalOptions="EndAndExpand">
+            <Grid Grid.Row="2" Margin="0,5,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
                 
-                <Label Text="Hole: " TextColor="White" Margin="5,0,0,0"/>
-                <Label x:Name="tb_History_HoleNumber" Text="holenumber" TextColor="White" Margin="100,0,0,0"/>
+                <Label Grid.Row="0" HeightRequest="50" Grid.Column="0" Text="Hole: " TextColor="White" Margin="5,0,0,0"/>
+                <Label Grid.Row="1" HeightRequest="50" Grid.Column="0" Text="Par: " TextColor="White" Margin="5,0,0,0"/>
+                <Label Grid.Row="2" HeightRequest="50" Grid.Column="0" Text="Yards: " TextColor="White" Margin="5,0,0,0"/>
+                <Label Grid.Row="3" HeightRequest="50" Grid.Column="0" Text="Score: " TextColor="White" Margin="5,0,0,0"/>
 
-                <Label Text="Hole Par: " TextColor="White" Margin="5,20,0,0"/>
-                <Label x:Name="tb_History_HoleParNumber" Text="holeParnumber" TextColor="White" Margin="100,20,0,0"/>
 
-                <Label Text="Current Score: " TextColor="White" Margin="5,40,0,0"/>
-                <Label x:Name="tb_History_HoleScore" Text="holescore" TextColor="White" Margin="100,40,0,0"/>
-
-                <Label Text="Score Term: " TextColor="White" Margin="5,60,0,0"/>
-                <Label x:Name="tb_History_ParScore" Text="parscore" TextColor="White" Margin="100,60,0,0"/>
-
+                <CollectionView Grid.RowSpan="4" Grid.Column="1" x:Name="lv_Game_History" ItemsLayout="HorizontalList" SelectionMode="Single">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid WidthRequest="45">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40" />
+                                    <RowDefinition Height="40" />
+                                    <RowDefinition Height="40" />
+                                    <RowDefinition Height="40" />
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Text="{Binding Path=HoleNumber}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="50" TextColor="White"/>
+                                <Label Grid.Row="1" Text="{Binding Path=HolePar}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="50" TextColor="White"/>
+                                <Label Grid.Row="2" Text="{Binding Path=HoleDistance}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="50" TextColor="White"/>
+                                <Label Grid.Row="3" Text="{Binding Path=HoleScore}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="50" TextColor="White"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </Grid>
 
-            <StackLayout Grid.Row="2" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,5,5">
-                <Button x:Name="bt_Delete_Game_File" Text="Delete Saved Game" Clicked="bt_Delete_Game_File_Clicked" Style="{StaticResource WhiteButtonStyle}"/>
+            <Grid Grid.Row="3" VerticalOptions="End" Margin="0,0,0,10">
+                
+                <Label Text="Total Score: " TextColor="White" Margin="5,0,0,0"/>
+                <Label x:Name="tb_History_TotalScore" Text="ScoreNumber" TextColor="White" Margin="120,0,0,0"/>
+
+                <Label Text="Handicap: " TextColor="White" Margin="5,20,0,0"/>
+                <Label x:Name="tb_History_Handicap" Text="holeParnumber" TextColor="White" Margin="120,20,0,0"/>
+
+                <Label Text="Handicap Score: " TextColor="White" Margin="5,40,0,0"/>
+                <Label x:Name="tb_History_Handicap_Score" Text="ScoreNumber" TextColor="White" Margin="120,40,0,0"/>
+            </Grid>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,50,20">
+                <Button x:Name="bt_Delete_Game_File" Text="Delete" Clicked="bt_Delete_Game_File_Clicked" Style="{StaticResource WhiteButtonStyle}"/>
             </StackLayout>
             
         </Grid>

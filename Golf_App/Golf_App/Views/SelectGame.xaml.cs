@@ -19,6 +19,8 @@ namespace Golf_App.Views
         protected override void OnAppearing()
         {
             lv_courses.ItemsSource = CoursesManager.Courses.Course;
+            cb_ScrollHoleNumber.ItemsSource = GameManager.UserScoreValues;
+            cb_ScrollHoleNumber.SelectedIndex = 0;
             base.OnAppearing();
         }
 
@@ -37,6 +39,7 @@ namespace Golf_App.Views
             {
                 CoursesManager.LaunchGame();
                 GameManager.CurrentGame.IsEnabled = true;
+                GameManager.CurrentGame.UserHandicap = GameManager.UserHandicap;
 
                 foreach (var hole in GameManager.CurrentGame.CourseHoles)
                 {
@@ -44,8 +47,20 @@ namespace Golf_App.Views
                 }
 
                 lv_courses.SelectedItem = null;
+                GameManager.UserHandicap = 0;
                 Shell.Current.CurrentItem = Shell.Current.CurrentItem.Items[3];
             }
+        }
+
+        private void bt_ScrollHoleNumber_Clicked(object sender, EventArgs e)
+        {
+            cb_ScrollHoleNumber.Focus();
+        }
+
+        private void cb_ScrollHoleNumber_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bt_ScrollHoleNumber.Text = cb_ScrollHoleNumber.SelectedIndex.ToString();
+            GameManager.UserHandicap = cb_ScrollHoleNumber.SelectedIndex;
         }
     }
 }

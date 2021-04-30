@@ -7,8 +7,8 @@ namespace Golf_App.Classes
 {
     public static class CoursesManager
     {
-        public static Courses Courses = new Courses();
-        public static Course SelectedCourse;
+        public static Courses Courses = new Courses();      // Holds data for all courses.
+        public static Course SelectedCourse;                // Holds data for the selected course.
 
         public static void ImportCourses()
         {
@@ -43,9 +43,6 @@ namespace Golf_App.Classes
             }
         }
     }
-
-
-
 
     [XmlRoot("Courses")]
     public class Courses
@@ -86,6 +83,12 @@ namespace Golf_App.Classes
         [XmlElement("GPS_Latitude")]
         public string GPS_Latitude { get; set; }
 
+        [XmlElement("UserHandicap")]
+        public int UserHandicap { get; set; }
+
+        [XmlElement("TotalScore")]
+        public int TotalScore { get; set; }
+
         [XmlElement("GameDate")]
         public string GameDate { get; set; }
 
@@ -108,6 +111,9 @@ namespace Golf_App.Classes
         [XmlElement("HoleDistance")]
         public int HoleDistance { get; set; }
 
+        [XmlElement("HoleStrokeIndex")]
+        public int HoleStrokeIndex { get; set; }
+              
         [XmlElement("HoleScore")]
         public int HoleScore { get; set; }
 

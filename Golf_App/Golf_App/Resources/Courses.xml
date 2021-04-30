@@ -1,15 +1,16 @@
 <Courses>
     <Course>
-        <CourseName>Grange Park Messingham Golf Club</CourseName>	
+        <CourseName>Messingham Grange Golf Club</CourseName>
 		<CourseImage>FrontImage.JPG</CourseImage>
         <IsEnabled>False</IsEnabled>			
 		<GPS_Longitude>0.000001</GPS_Longitude>
 		<GPS_Latitude>0.000001</GPS_Latitude>			
         <CourseHoles>
             <Hole>
-				<HoleNumber>1</HoleNumber>
+                <HoleNumber>1</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>332</HoleDistance>
+				<HoleStrokeIndex>8</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -17,6 +18,7 @@
                 <HoleNumber>2</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>333</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -24,6 +26,7 @@
                 <HoleNumber>3</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>432</HoleDistance>
+				<HoleStrokeIndex>2</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -31,6 +34,7 @@
                 <HoleNumber>4</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>131</HoleDistance>
+				<HoleStrokeIndex>12</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -38,6 +42,7 @@
                 <HoleNumber>5</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>510</HoleDistance>
+				<HoleStrokeIndex>4</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -45,6 +50,7 @@
                 <HoleNumber>6</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>372</HoleDistance>
+				<HoleStrokeIndex>14</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -52,6 +58,7 @@
                 <HoleNumber>7</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>106</HoleDistance>
+				<HoleStrokeIndex>18</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -59,6 +66,7 @@
                 <HoleNumber>8</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>403</HoleDistance>
+				<HoleStrokeIndex>6</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -66,6 +74,7 @@
                 <HoleNumber>9</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>329</HoleDistance>
+				<HoleStrokeIndex>16</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -73,6 +82,7 @@
                 <HoleNumber>10</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>292</HoleDistance>
+				<HoleStrokeIndex>17</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -80,6 +90,7 @@
                 <HoleNumber>11</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>500</HoleDistance>
+				<HoleStrokeIndex>5</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -87,6 +98,7 @@
                 <HoleNumber>12</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>447</HoleDistance>
+				<HoleStrokeIndex>11</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -94,6 +106,7 @@
                 <HoleNumber>13</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>395</HoleDistance>
+				<HoleStrokeIndex>3</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -101,6 +114,7 @@
                 <HoleNumber>14</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>165</HoleDistance>
+				<HoleStrokeIndex>13</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -108,6 +122,7 @@
                 <HoleNumber>15</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>382</HoleDistance>
+				<HoleStrokeIndex>7</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -115,6 +130,7 @@
                 <HoleNumber>16</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>294</HoleDistance>
+				<HoleStrokeIndex>15</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -122,6 +138,7 @@
                 <HoleNumber>17</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>399</HoleDistance>
+				<HoleStrokeIndex>1</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -129,6 +146,7 @@
                 <HoleNumber>18</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>192</HoleDistance>
+				<HoleStrokeIndex>9</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -145,6 +163,7 @@
                 <HoleNumber>1</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>351</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -152,6 +171,7 @@
                 <HoleNumber>2</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>166</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -159,6 +179,7 @@
                 <HoleNumber>3</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>346</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -166,6 +187,7 @@
                 <HoleNumber>4</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>332</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -173,6 +195,7 @@
                 <HoleNumber>5</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>402</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -180,6 +203,7 @@
                 <HoleNumber>6</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>512</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -187,6 +211,7 @@
                 <HoleNumber>7</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>414</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -194,6 +219,7 @@
                 <HoleNumber>8</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>179</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -201,6 +227,7 @@
                 <HoleNumber>9</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>508</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -217,6 +244,7 @@
                 <HoleNumber>1</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>297</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -224,6 +252,7 @@
                 <HoleNumber>2</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>298</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -231,6 +260,7 @@
                 <HoleNumber>3</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>153</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -238,6 +268,7 @@
                 <HoleNumber>4</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>333</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -245,6 +276,7 @@
                 <HoleNumber>5</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>192</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -252,6 +284,7 @@
                 <HoleNumber>6</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>492</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -259,6 +292,7 @@
                 <HoleNumber>7</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>284</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -266,6 +300,7 @@
                 <HoleNumber>8</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>533</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -273,6 +308,7 @@
                 <HoleNumber>9</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>358</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -280,6 +316,7 @@
                 <HoleNumber>10</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>315</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -287,6 +324,7 @@
                 <HoleNumber>11</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>380</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -294,6 +332,7 @@
                 <HoleNumber>12</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>477</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -301,6 +340,7 @@
                 <HoleNumber>13</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>348</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -308,6 +348,7 @@
                 <HoleNumber>14</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>122</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -315,6 +356,7 @@
                 <HoleNumber>15</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>355</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -322,6 +364,7 @@
                 <HoleNumber>16</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>129</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -329,6 +372,7 @@
                 <HoleNumber>17</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>509</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -336,6 +380,7 @@
                 <HoleNumber>18</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>386</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -352,6 +397,7 @@
                 <HoleNumber>1</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>382</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -359,6 +405,7 @@
                 <HoleNumber>2</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>396</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -366,6 +413,7 @@
                 <HoleNumber>3</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>149</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -373,6 +421,7 @@
                 <HoleNumber>4</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>424</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -380,6 +429,7 @@
                 <HoleNumber>5</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>474</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -387,6 +437,7 @@
                 <HoleNumber>6</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>380</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -394,6 +445,7 @@
                 <HoleNumber>7</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>146</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -401,6 +453,7 @@
                 <HoleNumber>8</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>503</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -408,6 +461,7 @@
                 <HoleNumber>9</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>376</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -415,6 +469,7 @@
                 <HoleNumber>10</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>519</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -422,6 +477,7 @@
                 <HoleNumber>11</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>389</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -429,6 +485,7 @@
                 <HoleNumber>12</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>162</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -436,6 +493,7 @@
                 <HoleNumber>13</HoleNumber>
 				<HolePar>5</HolePar>				
 				<HoleDistance>477</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -443,6 +501,7 @@
                 <HoleNumber>14</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>344</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -450,6 +509,7 @@
                 <HoleNumber>15</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>404</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -457,6 +517,7 @@
                 <HoleNumber>16</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>418</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -464,6 +525,7 @@
                 <HoleNumber>17</HoleNumber>
 				<HolePar>3</HolePar>				
 				<HoleDistance>127</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
@@ -471,9 +533,163 @@
                 <HoleNumber>18</HoleNumber>
 				<HolePar>4</HolePar>				
 				<HoleDistance>414</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
 				<HoleScore>0</HoleScore>
 				<HoleParScore>-</HoleParScore>
             </Hole> 
         </CourseHoles>
-    </Course>   
+    </Course>
+	    <Course>
+        <CourseName>Ashby Decoy Golf Club</CourseName>
+		<CourseImage>FrontImage.JPG</CourseImage>
+        <IsEnabled>False</IsEnabled>			
+		<GPS_Longitude>53.564204</GPS_Longitude>
+		<GPS_Latitude>-0.690216</GPS_Latitude>		
+        <CourseHoles>
+            <Hole>
+                <HoleNumber>1</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>392</HoleDistance>
+				<HoleStrokeIndex>7</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+            <Hole>
+                <HoleNumber>2</HoleNumber>
+				<HolePar>3</HolePar>				
+				<HoleDistance>151</HoleDistance>
+				<HoleStrokeIndex>15</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>3</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>374</HoleDistance>
+				<HoleStrokeIndex>3</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>4</HoleNumber>
+				<HolePar>3</HolePar>				
+				<HoleDistance>195</HoleDistance>
+				<HoleStrokeIndex>13</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>5</HoleNumber>
+				<HolePar>5</HolePar>				
+				<HoleDistance>512</HoleDistance>
+				<HoleStrokeIndex>1</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>6</HoleNumber>
+				<HolePar>3</HolePar>				
+				<HoleDistance>155</HoleDistance>
+				<HoleStrokeIndex>11</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>7</HoleNumber>
+				<HolePar>5</HolePar>				
+				<HoleDistance>468</HoleDistance>
+				<HoleStrokeIndex>9</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>8</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>274</HoleDistance>
+				<HoleStrokeIndex>17</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>9</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>386</HoleDistance>
+				<HoleStrokeIndex>5</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>10</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>400</HoleDistance>
+				<HoleStrokeIndex>6</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+            <Hole>
+                <HoleNumber>11</HoleNumber>
+				<HolePar>5</HolePar>				
+				<HoleDistance>454</HoleDistance>
+				<HoleStrokeIndex>8</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>12</HoleNumber>
+				<HolePar>3</HolePar>				
+				<HoleDistance>145</HoleDistance>
+				<HoleStrokeIndex>16</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>13</HoleNumber>
+				<HolePar>5</HolePar>				
+				<HoleDistance>495</HoleDistance>
+				<HoleStrokeIndex>2</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>14</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>351</HoleDistance>
+				<HoleStrokeIndex>12</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>15</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>353</HoleDistance>
+				<HoleStrokeIndex>10</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>16</HoleNumber>
+				<HolePar>3</HolePar>				
+				<HoleDistance>130</HoleDistance>
+				<HoleStrokeIndex>14</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>17</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>396</HoleDistance>
+				<HoleStrokeIndex>4</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole> 
+			<Hole>
+                <HoleNumber>18</HoleNumber>
+				<HolePar>4</HolePar>				
+				<HoleDistance>319</HoleDistance>
+				<HoleStrokeIndex>18</HoleStrokeIndex>
+				<HoleScore>0</HoleScore>
+				<HoleParScore>-</HoleParScore>
+            </Hole>
+        </CourseHoles>
+    </Course>
 </Courses>
