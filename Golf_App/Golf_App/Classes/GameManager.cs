@@ -57,6 +57,7 @@ namespace Golf_App.Classes
                 ScoreParTotal += CurrentGame.CourseHoles[i].HolePar;
             }
             CurrentGame.TotalScore = ScoreTotal;
+            CurrentGame.ParofCourse = ScoreParTotal;
         }
 
         public static string CurrentGameSummary(int ScorePar, int Score)
@@ -79,13 +80,11 @@ namespace Golf_App.Classes
 
         public static string GameSummary(int start, int hole)
         {
-
             string Summary = "";
             for (int i = start; i < hole; i++)
             {
                 Summary += Environment.NewLine + "Hole " + (i + 1).ToString() + "  Par " + GameManager.CurrentGame.CourseHoles[i].HolePar + "  Score " + GameManager.CurrentGame.CourseHoles[i].HoleScore + "   " + GameManager.CurrentGame.CourseHoles[i].HoleParScore;
             }
-
             return Summary;
         }
 
@@ -166,7 +165,6 @@ namespace Golf_App.Classes
             }
             catch (Exception)
             {              
-                //MessageBox.Show("Could not load Course data.\n" + e.Message);
             }
         }
 

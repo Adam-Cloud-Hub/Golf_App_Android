@@ -31,7 +31,7 @@
     <TabBar>
         <ShellContent Title="Game History" Icon="icon_history.png" ContentTemplate="{DataTemplate local:GameHistory}" Route="GameHistory"/>
         <ShellContent Title="Home" Icon="icon_home.png" ContentTemplate="{DataTemplate local:Home}" Route="Home"/>
-        <ShellContent Title="Select Game" Icon="icon_history.png" ContentTemplate="{DataTemplate local:SelectGame}" Route="SelectGame"/>
+        <ShellContent Title="Select Game" Icon="icon_play.png" ContentTemplate="{DataTemplate local:SelectGame}" Route="SelectGame"/>
         <ShellContent Title="Game" Icon="icon_game.png" ContentTemplate="{DataTemplate local:GameInProgress}" Route="GameInProgress"/>
     </TabBar>
 </Shell>

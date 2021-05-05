@@ -83,6 +83,9 @@ namespace Golf_App.Classes
         [XmlElement("GPS_Latitude")]
         public string GPS_Latitude { get; set; }
 
+        [XmlElement("ParofCourse")]
+        public int ParofCourse { get; set; }
+
         [XmlElement("UserHandicap")]
         public int UserHandicap { get; set; }
 

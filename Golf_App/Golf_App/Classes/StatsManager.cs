@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Xml.Serialization;
 
@@ -9,8 +10,6 @@ namespace Golf_App.Classes
 {
     public static class StatsManager
     {
-        //SaveGameHistory();             // Rework the way games are saved??
-
         public static List<string> GameFiles = new List<string>();
         public static ObservableCollection<Course> GameHistory = new ObservableCollection<Course>();
         public static Course ViewGameHistory;
@@ -19,26 +18,17 @@ namespace Golf_App.Classes
         public static void ClearGameHistory()
         {
             GameHistory.Remove(ViewGameHistory);
-
-
-            //GameFiles.Clear();
-            //GameHistory.Clear();
-            //ViewGameHistory = null;
-            //GameFile = null;
         }
 
         public static void FindGameHistory()
         {
             GameHistory.Clear();
 
-            //GameFiles.Clear();            
-            var files = Directory.GetFiles(EnviromentManager.SavedGamesPath);
-            foreach (string file in files)
+            DirectoryInfo info = new DirectoryInfo(EnviromentManager.SavedGamesPath);
+            FileInfo[] files = info.GetFiles().OrderByDescending(p => p.CreationTimeUtc).ToArray();
+            foreach (FileInfo file in files)
             {
-                ImportGameHistory(Path.GetFileName(file));
-
-
-                //GameFiles.Add(Path.GetFileName(file));
+                ImportGameHistory(Path.GetFileName(file.FullName));
             }         
         }
 

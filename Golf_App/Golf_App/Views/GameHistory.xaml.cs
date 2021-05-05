@@ -1,11 +1,8 @@
 ﻿using Golf_App.Classes;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -38,6 +35,7 @@ namespace Golf_App.Views
                 lv_Game_History.SelectedItem = ((Hole[])lv_Game_History.ItemsSource).FirstOrDefault();
                 StatsManager.GameFile = StatsManager.ViewGameHistory.FileName;
 
+                tb_History_ParOfCourse.Text = StatsManager.ViewGameHistory.ParofCourse.ToString();
                 tb_History_TotalScore.Text = StatsManager.ViewGameHistory.TotalScore.ToString();
                 tb_History_Handicap.Text = StatsManager.ViewGameHistory.UserHandicap.ToString();
                 tb_History_Handicap_Score.Text = (StatsManager.ViewGameHistory.TotalScore - StatsManager.ViewGameHistory.UserHandicap).ToString();
@@ -50,8 +48,6 @@ namespace Golf_App.Views
         // Removes the saved game file. 
         private void bt_Delete_Game_File_Clicked(object sender, EventArgs e)
         {
-            //DisplayAlert("File", "Deleting " + StatsManager.GameFile + StatsManager.ViewGameHistory.FileName + StatsManager.ViewGameHistory.GameTime, "Ok");
-
             if (File.Exists(EnviromentManager.SavedGamesPath + StatsManager.GameFile))
             {
                 File.Delete(EnviromentManager.SavedGamesPath + StatsManager.GameFile);

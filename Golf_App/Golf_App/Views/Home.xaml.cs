@@ -15,19 +15,7 @@ namespace Golf_App.Views
         }
 
         protected override void OnAppearing()
-        {
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    if (File.Exists(EnviromentManager.SavedGamesPath + "Game" + i + ".xml"))
-            //    {
-            //        DisplayAlert("File", EnviromentManager.SavedGamesPath + "Game" + i + ".xml", "Ok");
-            //    }
-            //}
-
-            //if (Directory.Exists(EnviromentManager.SavedGamesPath))
-            //{
-            //    DisplayAlert("File", "folder Exists", "Ok");
-            //}            
+        {           
             if (File.Exists(EnviromentManager.SaveCurrentGame))
             {
                 bt_Continue_Game.IsVisible = true;

@@ -1,10 +1,7 @@
 ﻿using Golf_App.Classes;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -40,25 +37,10 @@ namespace Golf_App.Views
             base.OnAppearing();
         }
 
-        // Hides / shows content (gives it a cleaner look)
+        // Hides / shows content (gives it a cleaner look if user try to use game tab)
         private void Display_Game_Content(bool display_content)
         {
-            image_coursehole.IsVisible = display_content;
-            Title_Game_in_Progress.IsVisible = display_content;
-            bt_NextHole.IsVisible = display_content;
-            bt_PreviousHole.IsVisible = display_content;
-            bt_ScrollHoleNumber.IsVisible = display_content;
-            tb_ParValue_Text.IsVisible = display_content;
-            tb_ParValue.IsVisible = display_content;
-            tb_Hole_Distance_Text.IsVisible = display_content;
-            tb_Hole_Distance.IsVisible = display_content;
-            tb_Hole_Stroke_Index_Text.IsVisible = display_content;
-            tb_Hole_Stroke_Index.IsVisible = display_content;
-            tb_ParScore_Text.IsVisible = display_content;
-            tb_ParScore.IsVisible = display_content;
-            bt_ScrollScore.IsVisible = display_content;
-            tb_CurrentScore_Text.IsVisible = display_content;
-            bt_FinishGame.IsVisible = display_content;
+            GameInProcessContent.IsVisible = display_content;
         }
 
         // Loads in select course data and selects first hole.
@@ -103,8 +85,6 @@ namespace Golf_App.Views
                 tb_Hole_Stroke_Index.Text = hole.HoleStrokeIndex.ToString();
                 tb_ParValue.Text = hole.HolePar.ToString();
                 bt_ScrollHoleNumber.Text = (GameManager.CurrentHoleNumber + 1).ToString();
-
-                GameSummary();      // Active on hole 9 or 18
             }
             else
             {
@@ -190,7 +170,7 @@ namespace Golf_App.Views
                     first = 9;
                 }
                 GameManager.CurrentGameScoreTotal();
-                DisplayAlert("Game Summary", "Total Score " + GameManager.ScoreTotal.ToString() + Environment.NewLine + GameManager.CurrentGameSummary(GameManager.ScoreParTotal,
+                DisplayAlert("Game Summary", "Total Score " + (GameManager.ScoreTotal - GameManager.CurrentGame.UserHandicap).ToString() + Environment.NewLine + GameManager.CurrentGameSummary(GameManager.ScoreParTotal,
                     GameManager.ScoreTotal) + Environment.NewLine + "Handicap " + GameManager.CurrentGame.UserHandicap.ToString() + Environment.NewLine + GameManager.GameSummary(first, last), "Ok");
             }
             else if (GameManager.HoleNumber == 9 && GameManager.ScoreNumber > 0)

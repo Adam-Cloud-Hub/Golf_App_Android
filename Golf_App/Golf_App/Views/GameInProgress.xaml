@@ -21,7 +21,6 @@
                 <Picker x:Name="cb_ScrollHoleNumber" ItemDisplayBinding="{Binding Path=HoleNumber}" SelectedIndexChanged="cb_ScrollHoleNumber_SelectedIndexChanged" IsVisible="false"/>
             </Grid>
 
-
             <Grid HorizontalOptions="Start" VerticalOptions="End" Margin="5,0,0,360">
                 <Label x:Name="tb_ParValue_Text" Text="Hole Par: " FontSize="16" TextColor="White" Margin="0,0,0,0"/>
                 <Label x:Name="tb_ParValue" Text="parvalue"  FontSize="16" TextColor="White" Margin="75,0,0,0"/>
@@ -34,7 +33,6 @@
 
                 <Label x:Name="tb_ParScore_Text" Text="Score Term: " FontSize="16" TextColor="White" Margin="0,75,0,0"/>
                 <Label x:Name="tb_ParScore" Text="parscore"  FontSize="16" TextColor="White" Margin="90,75,0,0"/>
-                             
                 
                 <Label x:Name="tb_CurrentScore_Text" Text="Current Score: " FontSize="16" TextColor="White" Margin="0,115,0,0"/>
 
@@ -42,8 +40,7 @@
                     <Button x:Name="bt_ScrollScore" Clicked="bt_ScrollScore_Clicked" Font="20" Style="{StaticResource ScrollButton}"/>
                     <Picker x:Name="cb_ScrollScore" ItemDisplayBinding="{Binding Path=HoleNumber}" SelectedIndexChanged="cb_ScrollScore_SelectedIndexChanged" IsVisible="false"/>
                 </Grid>
-            </Grid>          
-            
+            </Grid>                     
             
             <Button x:Name="bt_FinishGame" Text="Finish Game" Clicked="bt_FinishGame_Clicked" FontSize="16" Margin="5,0,0,5" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource WhiteButtonStyle}"/>
         </Grid>

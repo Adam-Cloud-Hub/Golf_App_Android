@@ -11,7 +11,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="1"/>
                 <RowDefinition Height="200"/>
-                <RowDefinition Height="75"/>
+                <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
 
             <ListView Grid.Row="0" x:Name="lv_View_Game_History" ItemSelected="lv_View_Game_History_ItemSelected" SelectionMode="Single" HasUnevenRows="True" HeightRequest="-1">
@@ -69,15 +69,18 @@
             </Grid>
 
             <Grid Grid.Row="3" VerticalOptions="End" Margin="0,0,0,10">
-                
-                <Label Text="Total Score: " TextColor="White" Margin="5,0,0,0"/>
-                <Label x:Name="tb_History_TotalScore" Text="ScoreNumber" TextColor="White" Margin="120,0,0,0"/>
 
-                <Label Text="Handicap: " TextColor="White" Margin="5,20,0,0"/>
-                <Label x:Name="tb_History_Handicap" Text="holeParnumber" TextColor="White" Margin="120,20,0,0"/>
+                <Label Text="Par of Course: " TextColor="White" Margin="5,0,0,0"/>
+                <Label x:Name="tb_History_ParOfCourse" Text="ParOfCourse" TextColor="White" Margin="120,0,0,0"/>
 
-                <Label Text="Handicap Score: " TextColor="White" Margin="5,40,0,0"/>
-                <Label x:Name="tb_History_Handicap_Score" Text="ScoreNumber" TextColor="White" Margin="120,40,0,0"/>
+                <Label Text="Total Score: " TextColor="White" Margin="5,20,0,0"/>
+                <Label x:Name="tb_History_TotalScore" Text="ScoreNumber" TextColor="White" Margin="120,20,0,0"/>
+
+                <Label Text="Handicap: " TextColor="White" Margin="5,40,0,0"/>
+                <Label x:Name="tb_History_Handicap" Text="holeParnumber" TextColor="White" Margin="120,40,0,0"/>
+
+                <Label Text="Handicap Score: " TextColor="White" Margin="5,60,0,0"/>
+                <Label x:Name="tb_History_Handicap_Score" Text="ScoreNumber" TextColor="White" Margin="120,60,0,0"/>
             </Grid>
 
             <StackLayout Grid.Row="3" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,50,20">

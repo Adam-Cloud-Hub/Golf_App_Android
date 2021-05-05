@@ -1,8 +1,5 @@
-﻿using Android.Views;
-using Golf_App.Classes;
+﻿using Golf_App.Classes;
 using System;
-using System.IO;
-using System.Xml.Serialization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
