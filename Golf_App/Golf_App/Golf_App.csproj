@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -8,8 +8,59 @@
   <ItemGroup>
     <None Remove="Resources\Courses.xml" />
     <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole1.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole10.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole11.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole12.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole13.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole14.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole15.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole16.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole17.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole18.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole2.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole3.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole4.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole5.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole6.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole7.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole8.JPG" />
+    <None Remove="Resources\Courses\AshbyDecoyGolfClub\Hole9.JPG" />
     <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole1.jpg" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole10.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole11.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole12.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole13.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole14.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole15.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole16.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole17.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole18.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole2.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole3.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole4.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole5.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole6.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole7.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole8.JPG" />
+    <None Remove="Resources\Courses\GainsboroughKarstenLakes\Hole9.JPG" />
     <None Remove="Resources\Courses\GainsboroughThonockPark\Hole1.jpg" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole10.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole11.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole12.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole13.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole14.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole15.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole16.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole17.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole18.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole2.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole3.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole4.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole5.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole6.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole7.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole8.JPG" />
+    <None Remove="Resources\Courses\GainsboroughThonockPark\Hole9.JPG" />
     <None Remove="Resources\Courses\MessinghamGrangeGolfClub\Hole1.JPG" />
     <None Remove="Resources\Courses\MessinghamGrangeGolfClub\Hole10.JPG" />
     <None Remove="Resources\Courses\MessinghamGrangeGolfClub\Hole11.JPG" />
@@ -28,13 +79,62 @@
     <None Remove="Resources\Courses\MessinghamGrangeGolfClub\Hole7.JPG" />
     <None Remove="Resources\Courses\MessinghamGrangeGolfClub\Hole8.JPG" />
     <None Remove="Resources\Courses\MessinghamGrangeGolfClub\Hole9.JPG" />
-    <None Remove="Resources\Courses\NormanbyHallGolfClub\Hole1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\Courses.xml" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole10.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole11.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole12.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole13.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole14.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole15.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole16.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole17.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole18.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole2.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole3.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole4.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole5.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole6.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole7.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole8.JPG" />
+    <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole9.JPG" />
     <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole1.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole10.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole11.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole12.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole13.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole14.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole15.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole16.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole17.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole18.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole2.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole3.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole4.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole5.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole6.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole7.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole8.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughKarstenLakes\Hole9.JPG" />
     <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole1.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole11.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole12.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole13.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole14.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole15.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole16.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole17.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole18.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole2.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole3.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole4.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole5.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole6.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole7.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole8.JPG" />
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole9.JPG" />
     <EmbeddedResource Include="Resources\Courses\MessinghamGrangeGolfClub\Hole1.JPG" />
     <EmbeddedResource Include="Resources\Courses\MessinghamGrangeGolfClub\Hole10.JPG" />
     <EmbeddedResource Include="Resources\Courses\MessinghamGrangeGolfClub\Hole11.JPG" />
@@ -53,7 +153,6 @@
     <EmbeddedResource Include="Resources\Courses\MessinghamGrangeGolfClub\Hole7.JPG" />
     <EmbeddedResource Include="Resources\Courses\MessinghamGrangeGolfClub\Hole8.JPG" />
     <EmbeddedResource Include="Resources\Courses\MessinghamGrangeGolfClub\Hole9.JPG" />
-    <EmbeddedResource Include="Resources\Courses\NormanbyHallGolfClub\Hole1.JPG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -84,5 +183,9 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\Courses\AshbyDecoyGolfClub\Hole1.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Courses\GainsboroughThonockPark\Hole10.JPG" />
   </ItemGroup>
 </Project>
